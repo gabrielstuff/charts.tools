@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   site: {
-    url: 'https://charts.tools',
+    url: 'https://www.charts.tools',
     name: 'Charts tools',
   },
   devtools: { enabled: true },
