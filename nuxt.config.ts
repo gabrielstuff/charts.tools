@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     'nuxt-simple-sitemap',
     'nuxt-simple-robots',
+    '@zadigetvoltaire/nuxt-gtm',
   ],
   gtm: {
     id: 'GTM-N75VB62N',
