@@ -13,10 +13,14 @@
     "@types/node": "^18.17.3",
     "@unocss/nuxt": "^0.55.3",
     "@zadigetvoltaire/nuxt-gtm": "^0.0.13",
-    "nuxt": "^3.6.5",
+    "nuxt": "3.7.0",
     "nuxt-simple-robots": "^3.1.1",
     "nuxt-simple-sitemap": "^3.2.5",
     "nuxt-site-config": "^1.0.10",
     "nuxt-site-config-kit": "^1.0.10"
+  },
+  "resolutions": {
+    "nitropack": "npm:nitropack-edge@latest",
+    "h3": "npm:h3-nightly@latest"
   }
 }
