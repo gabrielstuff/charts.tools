@@ -6,11 +6,15 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: true },
   modules: [
+    '@nuxtjs/i18n',
     '@unocss/nuxt',
     'nuxt-simple-sitemap',
     'nuxt-simple-robots',
     '@zadigetvoltaire/nuxt-gtm',
   ],
+  i18n: {
+    vueI18n: './i18n.config.ts' // if you are using custom path, default 
+  }
   gtm: {
     id: 'GTM-N75VB62N',
     defer: true,
