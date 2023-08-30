@@ -5,7 +5,16 @@
 </template>
 
 <script setup lang="ts">
-console.log('hello world')
+useHead({
+  title: 'Charts tools that helps you with... Charts!',
+  meta: [
+    { name: 'description', content: 'Enhance your data visualization with our powerful charting tools! Create stunning charts effortlessly for insightful data analysis. Unlock the potential of your information with our user-friendly charting solutions.' }
+  ],
+  bodyAttrs: {
+    class: 'charts_body'
+  },
+  script: [ { innerHTML: 'console.log(\'Hello world\')' } ]
+})
 </script>
 
 <style>
