@@ -13,8 +13,25 @@ export default defineNuxtConfig({
     '@zadigetvoltaire/nuxt-gtm',
   ],
   i18n: {
-    vueI18n: './i18n.config.ts' // if you are using custom path, default 
-  }
+    baseUrl: 'https://charts.tools/',
+    locales: [
+      {
+        code: 'en',
+        iso: 'en-US'
+      },
+      {
+        code: 'fr',
+        iso: 'fr-FR'
+      }
+    ],
+    vueI18n: './i18n.config.ts', // if you are using custom path, default 
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root',  // recommended
+    },
+
+  },
   gtm: {
     id: 'GTM-N75VB62N',
     defer: true,
